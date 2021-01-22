@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Óscar Baeza | Front-End Dev</title>
+		<title>Óscar Baeza</title>
 		<!-- Extracted from Guergana Tzatchkova -->
 
 		<link
@@ -17,7 +17,7 @@
 		/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/first_theme.css" />
+		<link id="css" rel="stylesheet" href="css/first_theme.css" />
 	</head>
 
 	<body>
@@ -36,6 +36,30 @@
 				></a>
 			</div>
 			<!-- <div class="tagline"><a href="projects.html"> Links to Projects </a></div> -->
+
+			<div>
+				<button id="button1" value="first_theme">Pink</button>
+				<button id="button2" value="second_theme">Yellow</button>
+				<button id="button3" value="third_theme">Blue</button>
+				<button id="button4" value="dark_theme">Dark</button>
+			</div>
 		</main>
+
+		<script>
+			var s1 = document.querySelector("#button1");
+			var s2 = document.querySelector("#button2");
+			var s3 = document.querySelector("#button3");
+			var s4 = document.querySelector("#button4");
+
+			var style = document.querySelector("#css");
+
+			buttons = [s1, s2, s3];
+			buttons.forEach((element) => {
+				element.addEventListener("click", (event) => {
+					event.preventDefault();
+					style.href = "css/" + element.value + ".css";
+				});
+			});
+		</script>
 	</body>
 </html>
