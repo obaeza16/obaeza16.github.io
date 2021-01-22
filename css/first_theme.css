@@ -1,0 +1,22 @@
+/* First Theme */
+
+main {
+	background: #c9127a;
+	color: #fafafa;
+}
+
+.icons-social a {
+	color: #fafafa;
+}
+
+.icons-social a svg path {
+	fill: #fafafa;
+}
+
+.dev-badge {
+	width: 76px;
+}
+
+a {
+	color: #ffffff;
+}
