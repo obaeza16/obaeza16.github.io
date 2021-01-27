@@ -1,70 +1,67 @@
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Óscar Baeza</title>
-		<!-- Extracted from Guergana Tzatchkova -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-			rel="stylesheet"
-		/>
-		<link
-			rel="shortcut icon"
-			href="favicon/android-chrome-512x512.png"
-			type="image/x-icon"
-		/>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<link id="css" rel="stylesheet" href="css/first_theme.css" />
-	</head>
+        <title>Óscar Baeza</title>
+        <!-- Extracted from Guergana Tzatchkova -->
 
-	<body>
-		<main>
-			<div class="intro">Hello, I'm Óscar Baeza!</div>
-			<div class="tagline">
-				Front-End Developer | BioInformatician | Learner
-			</div>
+        <link
+            href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
+            rel="stylesheet" />
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+            rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon/android-chrome-512x512.png"
+            type="image/x-icon" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link id="css" rel="stylesheet" href="css/first_theme.css" />
+    </head>
 
-			<div class="icons-social">
-				<a target="_blank" href="https://github.com/obaeza16"
-					><i class="fab fa-github"></i
-				></a>
-				<a target="_blank" href="https://www.linkedin.com/in/óscar-baeza/"
-					><i class="fab fa-linkedin"></i
-				></a>
-			</div>
-			<!-- <div class="tagline"><a href="projects.html"> Links to Projects </a></div> -->
+    <body>
+        <main>
+            <div class="intro">Hello, I'm Óscar Baeza!</div>
+            <div class="tagline">
+                Front-End Developer | BioInformatician | Learner
+            </div>
 
-			<div>
-				<button id="button1" value="first_theme">Pink</button>
-				<button id="button2" value="second_theme">Yellow</button>
-				<button id="button3" value="third_theme">Blue</button>
-				<button id="button4" value="dark_theme">Dark</button>
-			</div>
-		</main>
+            <div class="icons-social">
+                <a target="_blank" href="https://github.com/obaeza16"><i
+                        class="fab fa-github"></i></a>
+                <a target="_blank"
+                    href="https://www.linkedin.com/in/óscar-baeza/"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <!-- <div class="tagline"><a href="projects.html"> Links to Projects </a></div> -->
 
-		<script>
-			var s1 = document.querySelector("#button1");
-			var s2 = document.querySelector("#button2");
-			var s3 = document.querySelector("#button3");
-			var s4 = document.querySelector("#button4");
+            <div class="buttons">
+                <button id="button1" value="first_theme">Pink</button>
+                <button id="button2" value="second_theme">Yellow</button>
+                <button id="button3" value="third_theme">Blue</button>
+                <button id="button4" value="dark_theme">Dark</button>
+            </div>
+        </main>
 
-			var style = document.querySelector("#css");
+        <script>
+            var s1 = document.querySelector( "#button1" );
+            var s2 = document.querySelector( "#button2" );
+            var s3 = document.querySelector( "#button3" );
+            var s4 = document.querySelector( "#button4" );
 
-			buttons = [s1, s2, s3];
-			buttons.forEach((element) => {
-				element.addEventListener("click", (event) => {
-					event.preventDefault();
-					style.href = "css/" + element.value + ".css";
-				});
-			});
-		</script>
-	</body>
+            var style = document.querySelector( "#css" );
+
+            buttons = [ s1, s2, s3, s4 ];
+            buttons.forEach( ( element ) =>
+            {
+                element.addEventListener( "click", ( event ) =>
+                {
+                    event.preventDefault();
+                    style.href = "css/" + element.value + ".css";
+                } );
+            } );
+        </script>
+    </body>
+
 </html>

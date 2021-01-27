@@ -1,1 +1,38 @@
 /* Dark Theme */
+
+main {
+	background: #121212;
+	color: #fafafa;
+}
+
+.icons-social a {
+	color: #fafafa;
+}
+
+.icons-social a svg path {
+	fill: #fafafa;
+}
+
+.dev-badge {
+	width: 76px;
+}
+
+a {
+	color: #ffffff;
+}
+
+#button1:hover {
+box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0  rgba(255, 255, 255, 0.24);
+}
+
+#button2:hover {
+box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0  rgba(255, 255, 255, 0.24);
+}
+
+#button3:hover {
+box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0  rgba(255, 255, 255, 0.24);
+}
+
+#button4:hover {
+box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0  rgba(255, 255, 255, 0.24);
+}
