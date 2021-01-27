@@ -42,7 +42,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	padding: 0 30px;
+    padding: 275px 30px;
+    overflow: hidden;
 }
 
 main:not(.projects) {
@@ -86,4 +87,11 @@ ul.projects {
 	text-align: left;
 	padding-bottom: 1em;
 	list-style: square;
+}
+
+.transparent {
+    opacity: 0;
+    padding: 25px;
+    margin: 20px;
+    height: 1500px;
 }
