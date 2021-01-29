@@ -1,14 +1,25 @@
 /* Third Theme */
 
 main {
-	background: #FAFAFA;
-	color: #0277BD;
+	background: #fafafa;
+	color: #0277bd;
 }
 
 .icons-social a {
-	color: #0277BD;
+	color: #0277bd;
 }
 
-.icons-social a svg path{
-	fill: #0277BD;
+.icons-social a svg path {
+	fill: #0277bd;
+}
+
+#section07 {
+	color: #0277bd;
+}
+#section07 a {
+	color: #0277bd;
+}
+#section07 a span {
+	border-left: 1px solid #0277bd;
+	border-bottom: 1px solid #0277bd;
 }
