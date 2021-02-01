@@ -23,3 +23,24 @@ main {
 	border-left: 1px solid #1e1e1e;
 	border-bottom: 1px solid #1e1e1e;
 }
+
+/* Change Scroll Bar Style */
+/* width */
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #fff492;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #9b8f24;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #d8c200;
+}
