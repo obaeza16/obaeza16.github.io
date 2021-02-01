@@ -37,6 +37,9 @@ button {
 }
 
 /* Custom Styles */
+#titol {
+	display: none;
+}
 
 main {
 	display: flex;
