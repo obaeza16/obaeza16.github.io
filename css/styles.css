@@ -48,6 +48,11 @@ button {
 	padding-top: 10px;
 }
 
+.body {
+	margin: auto;
+	padding: 10px;
+}
+
 main {
 	display: flex;
 	flex-direction: column;
