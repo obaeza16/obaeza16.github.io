@@ -37,8 +37,15 @@ button {
 }
 
 /* Custom Styles */
+/* Only biografia titol abajo */
 #titol {
 	display: none;
+}
+
+/* All titles style below */
+.titol {
+	margin: 10px;
+	padding-top: 10px;
 }
 
 main {
