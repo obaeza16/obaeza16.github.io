@@ -47,6 +47,14 @@ button {
 	display: none;
 }
 
+.bold {
+	font-weight: 700;
+}
+
+.italic {
+	font-style: italic;
+}
+
 /* All titles style below */
 .titol {
 	/* margin: 10px; */
