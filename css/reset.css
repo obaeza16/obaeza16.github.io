@@ -45,7 +45,9 @@ img {
 }
 
 .right {
-	margin-left: auto;
+	width: 100%;
+	display: flex;
+	justify-content: end;
 }
 
 button {
@@ -55,6 +57,7 @@ button {
 	transition-duration: 0.4s;
 	font-size: 15px;
 	padding: 8px 20px;
+	margin-left: 9px;
 }
 
 button:active {

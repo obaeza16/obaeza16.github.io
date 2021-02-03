@@ -1,5 +1,10 @@
 /* Typography */
 
+/* @font-face {
+	font-family: "Reem Kufi";
+	src: url("../res/Reem_Kufi/ReemKufi-Regular.ttf");
+} */
+
 html {
 	font-family: "Roboto", sans-serif;
 }
@@ -44,8 +49,14 @@ button {
 
 /* All titles style below */
 .titol {
-	margin: 10px;
+	/* margin: 10px; */
+	margin-left: -20px;
 	padding-top: 10px;
+	font-family: "Reem Kufi", sans-serif;
+}
+
+.body > .titol {
+	font-family: "Reem Kufi", sans-serif;
 }
 
 .body {
@@ -113,6 +124,7 @@ ul.projects {
 .body {
 	margin-top: 40px;
 	text-align: initial;
+	max-width: 1200px;
 }
 
 .body > div {
@@ -124,6 +136,15 @@ ul.projects {
 	max-width: 400px;
 	padding: 20px;
 	padding-top: 0px;
+	padding-right: 0px;
+}
+
+p:last-of-type {
+	margin-bottom: 3em;
+}
+
+p {
+	margin: 1em 0em;
 }
 
 /* Animate the scroll arrow */
