@@ -6,11 +6,19 @@ var s4 = document.querySelector("#button4");
 
 var style = document.querySelector("#css");
 
+// Set THEME as selected in local storage
+var theme = localStorage.getItem("theme");
+if (theme) {
+	style.href = "css/" + theme + ".css";
+}
+
 buttons = [s1, s2, s3, s4];
 buttons.forEach((element) => {
 	element.addEventListener("click", (event) => {
 		event.preventDefault();
 		style.href = "css/" + element.value + ".css";
+		// Save THEME on localstorage
+		localStorage.setItem("theme", element.value);
 	});
 });
 
