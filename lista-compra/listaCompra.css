@@ -1,0 +1,129 @@
+@media only screen and (min-width: 768px) {
+	body {
+		margin-top: 25px;
+	}
+
+	h1 {
+		display: flex;
+		margin: 35px auto;
+	}
+
+	#wrap {
+		width: 600px;
+	}
+
+	input,
+	label,
+	button {
+		margin: 5px 0px;
+		padding: 5px;
+	}
+
+	.mensajes li {
+		margin: 5px 0px;
+		max-width: 500px;
+		padding: 5px;
+	}
+}
+
+/* MOBILE CSS */
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#wrap {
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	margin: auto;
+}
+
+label {
+	padding: 5px 0px;
+}
+
+button {
+	padding: 10px;
+	margin: 10px 0px;
+	border-radius: 8px;
+}
+
+button:first-of-type {
+	margin-top: 20px;
+}
+
+ul {
+	padding-left: 0px;
+	list-style: none;
+}
+
+.mensajes li {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid rgb(253, 152, 0);
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.mensajes li a {
+	text-align: right;
+	align-self: flex-end;
+	font-size: 0.8em;
+	color: brown;
+	text-decoration: none;
+	padding: 5px;
+}
+
+/* LIGTHBOX */
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 5px solid rgb(253, 152, 0);
+	width: 80%; /* Could be more or less, depending on screen size */
+	animation-name: animatetop;
+	animation-duration: 0.8s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
